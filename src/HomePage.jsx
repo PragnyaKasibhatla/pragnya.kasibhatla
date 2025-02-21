@@ -2,8 +2,7 @@ import "./HomePage.css";
 import { Link } from "react-router";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+
 function HomePage() {
     const [animate, setAnimate] = useState(false);
 
@@ -26,7 +25,6 @@ function HomePage() {
 
     return (
         <div className="home-page-container">
-            {/* <Navbar /> */}
             <div className="intro">
                 <motion.img
                     src="/girl-employee2.png"
@@ -91,7 +89,6 @@ function HomePage() {
                     </motion.div>
                 </motion.div>
             </div>
-            {/* <Footer /> */}
         </div>
     );
 }

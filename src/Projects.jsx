@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
 import "./Projects.css";
 import "./Nav.css";
 import "./Footer.css";
@@ -45,7 +43,6 @@ const Projects = () => {
                 </div>
             </div>
             <div className="horizontal-divider"></div>
-            {/* <Footer /> */}
         </>
     );
 };

@@ -1,13 +1,10 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
 import "./Resume.css";
 import "./Nav.css";
 import "./Footer.css";
 const Resume = () => {
     return (
         <>
-            {/* <Navbar /> */}
             <main className="container">
                 <h1 className="title">Resume</h1>
 
