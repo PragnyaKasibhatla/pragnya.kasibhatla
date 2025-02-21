@@ -85,11 +85,13 @@ const Contact = () => {
             <div className="contact-container">
                 <div className="contact-info">
                     <h2>Contact</h2>
-                    <p>Looking forward to hearing from you</p>
-                    <h4>Phone</h4>
-                    <p>+91-9949350041</p>
-                    <h4>Email</h4>
-                    <p>kasibhatlapragnya@gmail.com</p>
+                    <span className="para">
+                        Looking forward to hearing from you
+                    </span>
+                    <span className="heading">Phone</span>
+                    <span className="para">+91-9949350041</span>
+                    <span className="heading">Email</span>
+                    <span className="para">kasibhatlapragnya@gmail.com</span>
                 </div>
 
                 <div className="form-container">

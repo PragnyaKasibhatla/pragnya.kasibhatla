@@ -16,9 +16,17 @@
     font-weight: bold;
 }
 
-.contact-info h4 {
-    font-size: 18px;
+.heading {
+    display: block;
+    font-size: 22px;
     font-weight: bold;
+    padding: 10px 0px;
+}
+
+.para {
+    display: block;
+    font-size: 16px;
+    padding: 10px 0px;
 }
 
 .form-container {
@@ -92,9 +100,6 @@ textarea {
         width: 100%;
     }
 
-    /* .form-group {
-        width: 300%;
-    } */
 
     .form-group textarea {
         width: 87%;
@@ -111,12 +116,13 @@ textarea {
         width: 100%;
     }
 
-    .contact-info h4,
-    p {
-        display: none;
-    }
 
     .submit-btn {
         width: 92%;
+    }
+
+    .para,
+    .heading {
+        display: none;
     }
 }
