@@ -116,13 +116,14 @@
     .circle1,
     .circle2,
     .circle3 {
-        width: 70px;
-        height: 70px;
+        width: 80px;
+        height: 80px;
         padding: 5px;
     }
 
     .home-page-container {
         min-height: 65vh;
+        margin-bottom: 20px;
     }
 
 }
@@ -143,13 +144,14 @@
     .circle1,
     .circle2,
     .circle3 {
-        width: 60px;
-        height: 60px;
+        width: 80px;
+        height: 80px;
         padding: 5px;
     }
 
     .home-page-container {
         min-height: 65vh;
+        margin-bottom: 20px;
     }
 
 }
