@@ -1,0 +1,155 @@
+.home-page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 75vh;
+}
+
+.intro {
+    position: relative;
+    max-width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: auto;
+    color: black;
+    text-align: center;
+}
+
+.intro img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    width: 300px;
+}
+
+.content {
+    width: 100%;
+    max-width: 400px;
+}
+
+.hello {
+    font-size: 6vw;
+    margin: 0;
+}
+
+.bio {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Circles */
+.circles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.circles a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.circle1,
+.circle2,
+.circle3 {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.circle1 {
+    background-color: #eea302;
+}
+
+.circle2 {
+    background-color: #ff3b25;
+}
+
+.circle3 {
+    background-color: #80d8da;
+}
+
+.circle1:hover,
+.circle2:hover,
+.circle3:hover {
+    background-color: white;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+    }
+
+    .intro img {
+        width: 250px;
+        height: auto;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .hello {
+        font-size: 6vw;
+    }
+
+    .bio {
+        font-size: 12px;
+    }
+
+    .circles {
+        gap: 8px;
+    }
+
+    .circle1,
+    .circle2,
+    .circle3 {
+        width: 70px;
+        height: 70px;
+        padding: 5px;
+    }
+
+    .home-page-container {
+        min-height: 65vh;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .intro img {
+        width: 200px;
+    }
+
+    .hello {
+        font-size: 7vw;
+    }
+
+    .bio {
+        font-size: 11px;
+    }
+
+    .circle1,
+    .circle2,
+    .circle3 {
+        width: 60px;
+        height: 60px;
+        padding: 5px;
+    }
+
+    .home-page-container {
+        min-height: 65vh;
+    }
+
+}

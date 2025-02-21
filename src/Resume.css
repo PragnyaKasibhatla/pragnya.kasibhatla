@@ -1,0 +1,119 @@
+.parent-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Ensures it covers full viewport */
+}
+
+.container {
+    position: relative;
+    width: 890px;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    justify-content: flex-start;
+    gap: 30px;
+    margin: auto;
+    inset: 0;
+    top: 35px;
+    color: black;
+    padding: 0;
+    margin-bottom: 65px;
+}
+
+.left {
+    flex: 1;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.title {
+    font-size: 35px;
+}
+
+.right {
+    flex: 2;
+}
+
+.section {
+    display: flex;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.job {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.date {
+    font-weight: bold;
+    color: #777;
+    width: 150px;
+}
+
+.role {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.role h3 {
+    font-weight: bold;
+}
+
+.horizontal-divider {
+    position: relative;
+    width: calc(100% - 40px - 40px);
+    height: 1px;
+    background-color: #c7c7c7;
+    inset: 0;
+    border: none;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .section {
+        display: flex;
+        flex-direction: column;
+        max-width: 320px;
+    }
+
+    .job {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 320px;
+    }
+
+    .left,
+    .right,
+    .experience,
+    .role {
+        max-width: 320px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .container {
+        padding: 10px;
+        text-wrap: balance;
+        max-width: 320px;
+    }
+
+    .role h2,
+    h3,
+    p {
+        padding: 8px 0 0 0;
+        margin: 2px;
+    }
+
+
+}

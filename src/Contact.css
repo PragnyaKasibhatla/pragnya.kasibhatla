@@ -1,0 +1,122 @@
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    width: 80%;
+    margin: 50px auto;
+    min-height: 62vh;
+}
+
+.contact-info {
+    width: 30%;
+}
+
+.contact-info h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.contact-info h4 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-container {
+    width: 30%;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 45px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    width: 105%;
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    /* Ensures padding doesn't affect width */
+}
+
+.submit-btn {
+    background-color: #f0a500;
+    color: black;
+    border: 1px solid;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 10px;
+    width: 105%;
+    transition: background-color .2s ease-in-out, border-color .2s ease-in-out, color .2s ease-in-out, border-width .2s ease-in-out;
+}
+
+.submit-btn:hover {
+    background-color: #eeeeee;
+}
+
+.horizontal-divider {
+    position: relative;
+    width: calc(100% - 40px - 40px);
+    height: 1px;
+    background-color: #c7c7c7;
+    inset: 0;
+    border: none;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+
+
+    .contact-container {
+        max-width: 320px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    /* .form-group {
+        width: 300%;
+    } */
+
+    .form-group textarea {
+        width: 87%;
+    }
+
+    .form-row {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        gap: 10px;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .contact-info h4,
+    p {
+        display: none;
+    }
+
+    .submit-btn {
+        width: 92%;
+    }
+}
